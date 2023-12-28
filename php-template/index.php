@@ -4,7 +4,8 @@
 
 <?php
 $greet = getenv('HELLO_GREETING');
-$person = getenv('HELLO_MESSAGE');
+#$person = getenv('HELLO_MESSAGE');
+$person = $_ENV["HELLO_MESSAGEE"]
 
 echo "$greet $person";
 ?>
