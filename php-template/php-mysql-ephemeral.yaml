@@ -18,11 +18,8 @@ metadata:
       in non-persistent storage, so this configuration should be used for experimental
       purposes only.
     template.openshift.io/provider-display-name: Red Hat Training
-  creationTimestamp: "2023-12-21T02:01:41Z"
   name: php-mysql-ephemeral
   namespace: php-mysql-app
-  resourceVersion: "3283585"
-  uid: cfd07c08-09f7-4500-a782-b1dedbd3443d
 objects:
 - apiVersion: v1
   kind: Secret
@@ -251,12 +248,11 @@ parameters:
     are not using the default branch.
   displayName: Git Reference
   name: SOURCE_REPOSITORY_REF
-  value: template
 - description: Set this to the relative path to your project if it is not in the root
     of your repository.
   displayName: Context Directory
   name: CONTEXT_DIR
-  value: quotes
+  value: php-template
 - description: The exposed hostname that will route to the PHP app service, if left
     blank a value will be defaulted.
   displayName: Application Hostname
